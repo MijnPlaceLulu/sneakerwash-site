@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var y = (e.clientY - rect.top) / rect.height - 0.5;
       var rotateY = x * 14;
       var rotateX = y * -14;
-      heroMedia.style.transform = 'rotate(1.5deg) perspective(900px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
+              heroMedia.style.transform = 'perspective(900px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
     });
     heroSection.addEventListener('mouseleave', function () {
       heroMedia.style.transform = '';
