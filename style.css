@@ -5,7 +5,7 @@
   --wall:#161616;
   --wall-light:#1e1e1e;
   --paper:#eeece4;
-  --accent:#3667f0;
+  --accent:#7209b7;
   --tag-yellow:var(--accent);
   --tag-red:var(--accent);
   --brand-blue:var(--accent);
@@ -61,7 +61,7 @@ ul,ol{margin:0; padding:0; list-style:none;}
 }
 .block-black{
   background:
-    radial-gradient(circle at 20% 15%, rgba(54,103,240,.08), transparent 35%),
+    radial-gradient(circle at 20% 15%, rgba(114,9,183,.10), transparent 35%),
     var(--ink);
   color:var(--paper);
 }
@@ -76,7 +76,7 @@ section{padding:88px 0; border-bottom:2px dashed rgba(255,255,255,.08);}
   letter-spacing:.02em;
   font-size:16px;
   color:var(--accent);
-  background:rgba(54,103,240,.08);
+  background:rgba(114,9,183,.10);
   border:1px dashed var(--accent);
   padding:6px 14px;
   border-radius:999px;
@@ -125,15 +125,20 @@ section{padding:88px 0; border-bottom:2px dashed rgba(255,255,255,.08);}
   padding:16px 24px;
 }
 .logo{
-  font-family:var(--font-tag);
-  font-size:26px;
   text-decoration:none;
   color:var(--paper);
   margin-right:auto;
   transform:rotate(-2deg);
-  display:inline-block;
+  display:inline-flex;
+  align-items:center;
 }
-.logo span{color:var(--tag-yellow);}
+.logo img{
+  height:34px;
+  width:auto;
+  display:block;
+}
+.site-footer .logo{transform:rotate(-2deg); margin-right:0;}
+.site-footer .logo img{height:30px;}
 .nav{display:flex; gap:28px;}
 .nav a{text-decoration:none; font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:.03em; color:var(--paper);}
 .nav a:hover{color:var(--tag-yellow);}
@@ -182,7 +187,7 @@ section{padding:88px 0; border-bottom:2px dashed rgba(255,255,255,.08);}
   font-family:var(--font-head);
   font-size:clamp(120px, 22vw, 320px);
   color:transparent;
-  -webkit-text-stroke:1.5px rgba(54,103,240,.16);
+  -webkit-text-stroke:1.5px rgba(114,9,183,.20);
   line-height:1;
   white-space:nowrap;
   pointer-events:none;
@@ -290,7 +295,7 @@ section{padding:88px 0; border-bottom:2px dashed rgba(255,255,255,.08);}
 }
 .card h3{font-size:21px; margin-bottom:10px; color:var(--accent);}
 .card p{color:var(--text-secondary); margin:0; font-size:15px;}
-.card-dark{background:#111; border:2px dashed rgba(54,103,240,.3); color:var(--paper);}
+.card-dark{background:#111; border:2px dashed rgba(114,9,183,.35); color:var(--paper);}
 .card-dark p{color:#a8a8a0;}
 
 /* Antes e depois */
