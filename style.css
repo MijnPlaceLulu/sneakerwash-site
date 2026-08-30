@@ -263,6 +263,9 @@ section{padding:88px 0; border-bottom:2px dashed rgba(255,255,255,.08);}
 }
 .ig-tile:hover img{transform:scale(1.08); filter:none;}
 
+/* Customização */
+.custom-grid{grid-template-columns:repeat(3,1fr); max-width:820px; margin-left:auto; margin-right:auto;}
+
 /* Localização */
 .location-inner{
   display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;
